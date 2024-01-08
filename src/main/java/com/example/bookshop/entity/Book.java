@@ -23,6 +23,7 @@ public class Book {
     private String description;
     private double price;
     private int stock;
+    private String imgUrl;
     @ManyToOne
     private Author author;
     @ManyToOne
