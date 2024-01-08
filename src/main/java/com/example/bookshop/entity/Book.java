@@ -33,13 +33,14 @@ public class Book {
     @OneToMany(mappedBy = "book")
     private List<OrderItem> orderItems = new ArrayList<>();
 
-    public Book(int id, String isbn, String title, String description, double price, int stock) {
+    public Book(int id, String isbn, String title, String description, double price, int stock, String imgUrl) {
         this.id = id;
         this.isbn = isbn;
         this.title = title;
         this.description = description;
         this.price = price;
         this.stock = stock;
+        this.imgUrl = imgUrl;
     }
 
     public void addGenres(Genre genre){
