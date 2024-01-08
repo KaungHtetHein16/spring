@@ -16,7 +16,7 @@ public class Genre {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String genreName;
-    @ManyToMany
+    @ManyToMany(mappedBy = "genres")
     private List<Book> books = new ArrayList<>();
 
 }
